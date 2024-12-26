@@ -51,21 +51,21 @@ public class Main
     }
 
     public static void main(String[] args) {
-        // Inițializare colecție
+        // Inițializare 
         List<PerecheNumere> perechi = new ArrayList<>();
         perechi.add(new PerecheNumere(3, 5));
         perechi.add(new PerecheNumere(8, 13));
         perechi.add(new PerecheNumere(6, 12));
 
-        // Scrierea în fișier
+       
         scriere(perechi);
 
-        // Citirea din fișier
+        
         List<PerecheNumere> perechiCitite = citire();
         System.out.println("Perechi citite din fișier:");
         perechiCitite.forEach(System.out::println);
 
-        // Testare metode pe prima pereche
+        
         if (!perechiCitite.isEmpty()) {
             PerecheNumere primaPereche = perechiCitite.get(0);
             System.out.println("\nPrima pereche: " + primaPereche);
