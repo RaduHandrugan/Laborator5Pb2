@@ -51,7 +51,7 @@ public class Main
     }
 
     public static void main(String[] args) {
-        // Inițializare 
+        
         List<PerecheNumere> perechi = new ArrayList<>();
         perechi.add(new PerecheNumere(3, 5));
         perechi.add(new PerecheNumere(8, 13));
